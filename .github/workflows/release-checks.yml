@@ -21,3 +21,5 @@ jobs:
         run: python -B experiments/pilot/transport_selftest.py
       - name: Check mechanism design
         run: python -B experiments/experiment02/selftest.py
+      - name: Verify unchanged preregistration
+        run: python -B scripts/check_plan.py

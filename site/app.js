@@ -28,6 +28,7 @@ function table(result) {
   const body = node('tbody'); result.rows.forEach(row => { const tr = node('tr'); row.forEach(value => tr.append(node('td', String(value)))); body.append(tr); }); t.append(body); wrap.append(t); return wrap;
 }
 function renderIndex() {
+  if (!ledger) return;
   const q = $('#search').value.trim().toLowerCase(), status = $('#status').value;
   const matches = ledger.experiments.filter(e => (status === 'all' || e.status === status) && `${e.id} ${e.title} ${e.topic} ${e.finding}`.toLowerCase().includes(q));
   const target = $('#experiment-list'); target.replaceChildren();

@@ -9,7 +9,7 @@ The question is whether an external controller can make useful evidence availabl
 ## Experiments
 
 - **001 — Export oversight calibration.** Forty-four model decisions on one synthetic export fixture: eight trajectories across four session/record conditions, plus two manually constructed positive controls. All actor proposals were safe. Both monitor views caught the planted faults. The result is inconclusive about incremental monitorability.
-- **002 — Public state after a late trusted update.** A prospective mechanism probe using revoked export permission and invalidated release verification. Record creation and final action selection use separate sessions. Record retention is crossed with obsolete-action retention, with four additional record interventions. See the dated protocol and ledger for execution status.
+- **002 — Public state after a late trusted update.** Completed 20 calls on revoked export permission and invalidated release verification: 10 informed task completions and 6 appropriate deferrals among 16 final cells. Record creation and final action selection use separate sessions. Record retention is crossed with obsolete-action retention, with four additional record interventions. See the dated protocol and ledger for execution status.
 
 Results, failed setup gates, null findings, and limitations belong in the record. These small experiments are descriptive probes; they do not establish population-level performance or private reasoning faithfulness.
 

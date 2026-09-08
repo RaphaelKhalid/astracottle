@@ -7,24 +7,24 @@
       "date": "2026-09-08",
       "title": "Public state after a late trusted update",
       "topic": "causal public state action anchoring export release verification",
-      "status": "registered",
-      "statusLabel": "Registered",
-      "decisions": 0,
+      "status": "completed",
+      "statusLabel": "Completed",
+      "decisions": 20,
       "question": "Can a fresh action session revise an obsolete proposal using a separately committed public record?",
-      "findingLabel": "PROSPECTIVE PROTOCOL",
-      "finding": "Two oversight cases, a fixed 20-call maximum, and no results assumed. The record is committed before the action is selected.",
+      "findingLabel": "DESCRIPTIVE RESULT / TWO CASES",
+      "finding": "Fresh sessions acted on the updated public facts in both workflows. Relevant fact edits changed the action; paraphrases and irrelevant edits preserved it. Information-limited decisions deferred.",
       "stats": [
         {
-          "value": 2,
-          "label": "synthetic cases"
-        },
-        {
           "value": 20,
-          "label": "calls maximum"
+          "label": "model decisions"
         },
         {
-          "value": "2 × 2",
-          "label": "retention design"
+          "value": 16,
+          "label": "final cells"
+        },
+        {
+          "value": 2,
+          "label": "task cases"
         }
       ],
       "setup": [
@@ -34,12 +34,48 @@
         "Incorrect setup or inaccurate records make a case ineligible. There are no automatic retries or post-result prompt changes."
       ],
       "limitations": [
-        "The record-present cells have more current evidence; a utility advantage is not an isolated monitorability improvement.",
-        "Two cases and one sample per cell provide descriptive observations, not powered effect estimates.",
-        "There are no monitor calls in this study. It probes public evidence use and prior-action anchoring, not access to private reasoning."
+        "Record-present cells have more current evidence. Their task-completion advantage is not an isolated reasoning or monitorability benefit.",
+        "Both fixtures are small, benign, and explicitly instruct the actor to defer without evidence and disregard obsolete proposals. There is only one sample per cell.",
+        "No monitor calls or adaptive adversarial tests were performed. These outcomes do not establish access to private reasoning or general resistance to anchoring."
       ],
-      "next": "Publish this protocol, then execute its fixed cells and append the observations without rewriting the preregistration.",
-      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/main/experiments/experiment02/plan.json"
+      "next": "Test whether a committed record adds detection value for a reviewer beyond the same evidence and candidate action, on harder workflows with actual model-generated mistakes. Register that protocol before running it.",
+      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/1b2334492f7f48fd04f7266b2104e3dcc0f0eb91/experiments/experiment02/plan.json",
+      "results": {
+        "caption": "Counts describe these fixed cells; they are not population-level accuracy estimates.",
+        "columns": [
+          "Condition or control",
+          "Observed outcome"
+        ],
+        "rows": [
+          [
+            "Accurate record-only commits",
+            "2 / 2"
+          ],
+          [
+            "Evidence-sufficient final cells",
+            "10 / 10 completed"
+          ],
+          [
+            "Information-limited final cells",
+            "6 / 6 appropriately deferred"
+          ],
+          [
+            "Relevant fact interventions",
+            "2 / 2 changed as expected"
+          ],
+          [
+            "Paraphrase and metadata controls",
+            "4 / 4 preserved the action"
+          ],
+          [
+            "Observed prior-action anchoring",
+            "None in these samples"
+          ]
+        ]
+      },
+      "interpretation": "The public record was a usable path for current evidence across fresh sessions. There was no observed anchoring effect from retaining the stale proposal. This study included no monitor evaluation, so it does not establish improved CoT monitorability.",
+      "data": "/data/experiment-02.json",
+      "report": "https://github.com/RaphaelKhalid/astracottle/blob/main/docs/experiment-02-report.md"
     },
     {
       "id": "exp-001",
