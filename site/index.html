@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Astracottle: an open experiment notebook on public working state and oversight of Astra. Protocols, results, limitations, and public data.">
+  <title>Astracottle — experiment notebook</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#notebook">Skip to experiments</a>
+<div class="page">
+  <header>
+    <div class="masthead"><a class="wordmark" href="/">astracottle<span aria-hidden="true">_</span></a><div class="header-right"><span class="smallcaps">PUBLIC RESEARCH NOTEBOOK</span><button id="theme" type="button" aria-label="Switch color theme">Dark mode</button></div></div>
+    <nav aria-label="Main navigation"><a href="#notebook">[ experiments ]</a><a href="#method">[ method ]</a><a href="#publication">[ publication policy ]</a><a href="https://github.com/RaphaelKhalid/astracottle">[ source ↗ ]</a></nav>
+  </header>
+
+  <div class="intro"><p class="eyebrow">FIELD NOTES / ASTRA / OVERSIGHT</p><h1>Can public working state<br>make an AI easier to oversee?</h1><p>Small, inspectable experiments on the evidence an agent carries forward—and what a reviewer can learn from it.</p><p class="disclosure">Independent research. Public decision records are not private chain of thought. Early results are exploratory.</p></div>
+
+  <main id="notebook" tabindex="-1">
+    <div class="section-line"><h2>Experiment ledger</h2><span id="updated">Loading ledger…</span></div>
+    <div class="statistics" aria-label="Notebook totals"><div><strong id="study-count">—</strong><span>studies logged</span></div><div><strong id="decision-count">—</strong><span>model decisions</span></div><div><strong id="complete-count">—</strong><span>studies completed</span></div><div><strong>OPEN</strong><span>protocols &amp; data</span></div></div>
+    <div class="workspace">
+      <aside aria-label="Choose an experiment">
+        <label for="search">Find an experiment <kbd>/</kbd></label><input id="search" type="search" placeholder="Title or topic…" autocomplete="off">
+        <label for="status">Status</label><select id="status"><option value="all">All experiments</option><option value="completed">Completed</option><option value="registered">Registered</option><option value="running">Running</option></select>
+        <div id="experiment-list" role="list" aria-live="polite"></div>
+        <p class="index-note">Results, nulls, and design failures belong in the same notebook.</p>
+      </aside>
+      <article id="experiment" aria-live="polite"><p>Loading the public experiment record…</p><noscript><p>Enable JavaScript for the interactive ledger, or <a href="/data/ledger.json">read the ledger JSON</a> and <a href="https://github.com/RaphaelKhalid/astracottle">browse the source repository</a>.</p></noscript></article>
+    </div>
+    <p id="error" role="alert" hidden></p>
+  </main>
+
+  <section id="method" class="reference"><div class="section-line"><h2>The question behind the notebook</h2><span>METHOD NOTE / 01</span></div><div class="reference-grid"><div><h3>A public state is an intervention.</h3><p>Ask an agent to commit the evidence it is using. Start a fresh session. Control which record and previous action it receives. Then observe whether its decision changes in the way the evidence requires.</p><p>The useful outcome is better oversight of consequential mistakes: unsupported completion claims, weakened tests, or records included in an unauthorized export.</p></div><div><h3>What would count as evidence?</h3><p>Compare records against an evidence-and-action baseline, isolate restart effects, and test relevant edits alongside paraphrases and irrelevant edits. Track task success as well as caught and missed violations.</p><p>Dependence on public text does not establish faithful access to a model’s private computation. Small fixtures do not establish frontier-model parity.</p></div></div><details><summary>The original four-condition comparison</summary><div class="table-scroll"><table><caption>Experiment 001 intervention definitions</caption><thead><tr><th>Arm</th><th>Session</th><th>Public artifact</th></tr></thead><tbody><tr><td>A</td><td>Continued</td><td>Ordinary explanation</td></tr><tr><td>B</td><td>Continued</td><td>Typed working record</td></tr><tr><td>C</td><td>Fresh; full public-message replay</td><td>Typed working record</td></tr><tr><td>D</td><td>Fresh; previous public state only</td><td>Typed record and previous action</td></tr></tbody></table></div></details></section>
+
+  <section id="publication" class="reference"><div class="section-line"><h2>Publication policy</h2><span>RELEASE BY ALLOWLIST</span></div><div class="reference-grid"><div><h3>What is published</h3><p>Synthetic task fixtures, experiment protocols, public model outputs, deterministic labels, token counts, latency, and analysis limitations. Planned studies and completed studies are labeled separately.</p></div><div><h3>What stays out</h3><p>Credentials, private conversations, account usage and reset details, local file paths, session identifiers, and private reasoning. This website has no analytics, login, or model access. Theme preference is saved only in your browser.</p></div></div><p>Found an issue with the data or method? <a href="https://github.com/RaphaelKhalid/astracottle/issues">Open an issue on GitHub ↗</a></p></section>
+  <footer><span>astracottle / an independent, open notebook</span><span>HTML, evidence, and a healthy respect for null results. <a href="#">Back to top ↑</a></span></footer>
+</div>
+</body>
+</html>

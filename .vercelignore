@@ -1,0 +1,14 @@
+.git
+.vercel
+.env*
+node_modules
+**/__pycache__
+**/runs
+**/controls
+**/private
+**/empty_actor
+*.log
+*.zip
+
+**/__pycache__/**
+**/*.pyc

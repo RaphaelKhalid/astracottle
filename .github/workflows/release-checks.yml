@@ -1,0 +1,23 @@
+name: Release checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - name: Validate static publication
+        run: node scripts/check.mjs
+      - name: Scan staged source and served data
+        run: python -B scripts/public_safety_check.py --git-index . site
+      - name: Check deterministic fixtures
+        run: python -B experiments/pilot/scenario_selftest.py
+      - name: Check transport isolation
+        env:
+          LOCALAPPDATA: /tmp
+        run: python -B experiments/pilot/transport_selftest.py
+      - name: Check mechanism design
+        run: python -B experiments/experiment02/selftest.py
