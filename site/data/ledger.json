@@ -7,12 +7,12 @@
       "date": "2026-09-08",
       "title": "Evidence before the request",
       "topic": "late query typed evidence extraction source projection public state oversight",
-      "status": "registered",
-      "statusLabel": "Registered",
-      "decisions": 0,
+      "status": "running",
+      "statusLabel": "Running",
+      "decisions": 5,
       "question": "Can public evidence committed before a specific request support later decisions, and does the carried record help review those decisions?",
-      "findingLabel": "PROSPECTIVE MECHANISM STUDY",
-      "finding": "Eight fixed worlds compare request-known extraction, request-hidden extraction, a deterministic source projection, and full original evidence. Source-preservation and decision errors are measured separately.",
+      "findingLabel": "FIXED PROTOCOL / COLLECTING",
+      "finding": "Collection started after public preregistration. All attempted calls and independent grades will be released after the fixed run and audit; no interim monitoring-effect claim is made.",
       "stats": [
         {
           "value": 8,
@@ -40,7 +40,7 @@
         "The structured policies have deterministic evaluators. Model-based review is not established as necessary compared with available executable checks."
       ],
       "next": "Publish all attempted cases and separately evaluate source preservation, task utility, violations, and paired review. Use the result to decide whether a carried-record versus independent-reviewer-aid diagnostic is feasible.",
-      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/main/experiments/experiment04/plan.json"
+      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/f8d2badd409d46549e5d6a2631037a2350abe777/experiments/experiment04/plan.json"
     },
     {
       "id": "exp-003",
