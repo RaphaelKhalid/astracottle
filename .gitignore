@@ -13,3 +13,6 @@ __pycache__/
 *.zip
 .DS_Store
 Thumbs.db
+
+.vercel
+.env*

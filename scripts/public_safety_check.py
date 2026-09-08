@@ -87,6 +87,9 @@ def candidates(root, git_index=False):
 
 def scan_paths(roots, git_index_root=None):
     identifiers = {os.environ.get('USERNAME', ''), pathlib.Path.home().name}
+    # Generic hosted-CI account names are not personal identities; path and credential scans still apply.
+    if os.environ.get('GITHUB_ACTIONS') == 'true':
+        identifiers -= {'runner', 'runneradmin'}
     findings, binaries, count = [], [], 0
     targets = [(root, False) for root in roots]
     if git_index_root is not None:
