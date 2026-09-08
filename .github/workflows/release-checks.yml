@@ -27,3 +27,7 @@ jobs:
         run: python -B experiments/experiment03/selftest.py
       - name: Verify evidence-screen preregistration
         run: python -B scripts/check_screen.py
+      - name: Check late-request fixtures
+        run: python -B experiments/experiment04/selftest.py
+      - name: Verify late-request preregistration
+        run: python -B scripts/check_e4.py

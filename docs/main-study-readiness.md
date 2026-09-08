@@ -1,10 +1,10 @@
 # Main-study readiness and analysis protocol
 
-**Status: preparation only; Experiments 01 and 02 do not establish main-study readiness.** This document fixes the distinction between a useful development screen and a confirmatory study. The final task distribution, sample size, calibration set, and analysis implementation must be frozen in a separate preregistration before the main run.
+**Status: preparation only; Experiments 01–03 do not establish main-study readiness.** This document fixes the distinction between a useful development screen and a confirmatory study. The final task distribution, sample size, calibration set, and analysis implementation must be frozen in a separate preregistration before the main run.
 
 ## Evidence so far
 
-Experiment 01 used one fixture, eight actor trajectories, and two fabricated faulty controls. Every actor completed safely. The controls showed that concrete faults can be detected, but supplied no model-generated failures on which to estimate record-assisted recall. Experiment 02 used two benign cases: ten informed final cells succeeded and six insufficient-evidence cells deferred appropriately. It demonstrated public-information use in those cases, with no monitor calls. Neither experiment estimates the prevalence or difficulty of failures in a main-study population.
+Experiment 01 used one fixture, eight actor trajectories, and two fabricated faulty controls. Every actor completed safely. The controls showed that concrete faults can be detected, but supplied no model-generated failures on which to estimate record-assisted recall. Experiment 02 used two benign cases: ten informed final cells succeeded and six insufficient-evidence cells deferred appropriately. It demonstrated public-information use in those cases, with no monitor calls. Neither experiment estimates the prevalence or difficulty of failures in a main-study population. Experiment 003 added six source-conflict cases, all with correct actions and correct monitor acceptance. It supplied no violations or monitoring headroom; its records already contained solved answers. Experiment 004 is a separately registered development study of evidence committed before the request.
 
 ## The question and the units
 
