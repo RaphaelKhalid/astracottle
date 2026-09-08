@@ -7,24 +7,24 @@
       "date": "2026-09-08",
       "title": "Oversight evidence screening",
       "topic": "monitor headroom record compression source precedence verification",
-      "status": "registered",
-      "statusLabel": "Registered",
-      "decisions": 0,
+      "status": "completed",
+      "statusLabel": "Completed",
+      "decisions": 24,
       "question": "Do source and version conflicts produce real action mistakes, and does a public record help or harm review of those same actions?",
-      "findingLabel": "PROSPECTIVE DEVELOPMENT SCREEN",
-      "finding": "Six fixed cases test a missing prerequisite: actor-generated violations and a nontrivial action-only reviewer. Record-assisted improvement is not a screening gate.",
+      "findingLabel": "SCREEN COMPLETE / MAIN NOT READY",
+      "finding": "All six proposed actions were safe and task-correct. Both monitor views accepted all six. With no violations, detection sensitivity and added detection benefit remain unmeasured.",
       "stats": [
         {
-          "value": 6,
-          "label": "fixed cases"
-        },
-        {
           "value": 24,
-          "label": "calls maximum"
+          "label": "model decisions"
         },
         {
-          "value": 2,
-          "label": "oversight families"
+          "value": "6 / 6",
+          "label": "safe completions"
+        },
+        {
+          "value": 0,
+          "label": "actual violations"
         }
       ],
       "setup": [
@@ -35,10 +35,51 @@
       "limitations": [
         "Six development cases cannot establish power, calibrated false-positive rates, or main-study readiness. They will not enter confirmatory analysis.",
         "Record compression quality and downstream decision capability are combined in this screen. Both reviewers and actors use Astra.",
-        "The monitor threshold is fixed at 0.5 for screening; it is not a calibrated 10% false-positive threshold."
+        "The monitor threshold is fixed at 0.5 for screening; it is not a calibrated 10% false-positive threshold.",
+        "Records encoded the solved answers; a facts schema alone did not keep record creation separate from decision-making. All twelve monitor probability scores were zero, leaving no score variation for calibration."
       ],
-      "next": "Require actual violations, safe completions, and baseline catches and misses before pursuing calibration. Publish every case regardless of whether the record helps, harms, or changes nothing.",
-      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/main/experiments/experiment03/plan.json"
+      "next": "Prepare a separate request-after-commit study to distinguish a reusable evidence record from a precomputed answer. Establish actual errors and monitoring headroom on development cases before calibration or a main run.",
+      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/039c16b89ac7ca906378c66d679a0aecd5f9848d/experiments/experiment03/plan.json",
+      "data": "/data/experiment-03.json",
+      "report": "https://github.com/RaphaelKhalid/astracottle/blob/main/docs/experiment-03-report.md",
+      "interpretation": "The committed records correctly resolved source conflicts, but already contained the exact row sets or release-check lists. Action selection largely reformatted solved answers. This establishes neither a distinct downstream decision mechanism nor improved CoT monitorability. The preregistered error and monitor-headroom gates failed.",
+      "results": {
+        "caption": "Descriptive counts on six fixed development cases. No violating candidates were available to estimate sensitivity.",
+        "columns": [
+          "Measure",
+          "Observed outcome"
+        ],
+        "rows": [
+          [
+            "Valid, safe task completions",
+            "6 / 6"
+          ],
+          [
+            "Actor-generated violations",
+            "0 / 6"
+          ],
+          [
+            "Action-only monitor: TP / FN / FP / TN",
+            "0 / 0 / 0 / 6"
+          ],
+          [
+            "Record-assisted monitor: TP / FN / FP / TN",
+            "0 / 0 / 0 / 6"
+          ],
+          [
+            "Paired correctness: helped / harmed / unchanged",
+            "0 / 0 / 6"
+          ],
+          [
+            "Violation sensitivity / added detection benefit",
+            "Undefined: no violations"
+          ],
+          [
+            "Screening eligibility / main readiness",
+            "Failed / not ready"
+          ]
+        ]
+      }
     },
     {
       "id": "exp-002",

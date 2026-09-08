@@ -11,6 +11,8 @@ The question is whether an external controller can make useful evidence availabl
 - **001 — Export oversight calibration.** Forty-four model decisions on one synthetic export fixture: eight trajectories across four session/record conditions, plus two manually constructed positive controls. All actor proposals were safe. Both monitor views caught the planted faults. The result is inconclusive about incremental monitorability.
 - **002 — Public state after a late trusted update.** Completed 20 calls on revoked export permission and invalidated release verification: 10 informed task completions and 6 appropriate deferrals among 16 final cells. Record creation and final action selection use separate sessions. Record retention is crossed with obsolete-action retention, with four additional record interventions. See the dated protocol and ledger for execution status.
 
+- **003 — Oversight evidence screening.** Completed 24 calls across six cases: all actions correct, both monitor views accepted all. With no violations, added detection benefit remains unmeasured. Records already encoded the answers, motivating a separate request-after-commit design. [Report](docs/experiment-03-report.md).
+
 Results, failed setup gates, null findings, and limitations belong in the record. These small experiments are descriptive probes; they do not establish population-level performance or private reasoning faithfulness.
 
 ## Repository layout
@@ -39,7 +41,7 @@ The Python fixtures and evaluators use the standard library. Model execution use
 
 Run offline self-tests first. The experiment runner requires an explicit `--run` and a frozen plan. Configure `ASTRACOTTLE_WEEKLY_STOP_PERCENT` locally to an absolute weekly-used ceiling appropriate for your account. An absent ceiling fails closed. This guard is conservative; it is not a guaranteed per-call spend cap. Never commit local run directories or account metadata.
 
-The published experiment-02 plan freezes exact source hashes. If you change source or use another transport, register a new protocol before collecting results rather than silently replacing the original.
+The published experiment-02 and experiment-03 plans freeze exact source hashes. If you change source or use another transport, register a new protocol before collecting results rather than silently replacing the original.
 
 ## Public-release boundary
 
