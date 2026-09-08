@@ -17,12 +17,13 @@ For current export and release fixtures, policy is executable and source data st
 
 The application boundary is observable at the supplied-input level. It does not inspect server-internal state or establish a complete account of private computation. Any successful result is limited to the tested task distribution, model configuration, record format and monitor conditions.
 
-## Current status after Experiment 004
+## Current status after Experiment 006
 
 - Experiment 002 supports appropriate use of supplied public facts in two simple task cases.
 - Experiment 003 confirms six safe task completions and exposes solved-answer content inside facts records.
 - Experiment 004 preserves all source facts before a hidden request, with 32 safe task completions. The model inventories equal the deterministic inventory, so no distinctive reasoning signal is established.
-- Experiment 005 preregisters a carried-versus-independent aid diagnostic with separate natural and constructed candidates.
-- Actor-generated violations have not yet supplied a usable monitoring evaluation set. Detection improvement and calibrated trust remain unestablished.
+- Experiment 005 finds perfect flag decisions in every view on eight safe and eight constructed candidates. Carried and independent inventories are identical, so their differences do not identify a carriage effect.
+- Experiment 006 finds accurate pre-action forecasts when reviewers see the actual faulty state, but a simple mismatch heuristic is also perfect. Harmless mismatches are the next missing control.
+- Experiment 006 supplies actor-generated violations under experimenter-injected state faults. A naturally arising failure population, calibrated trust and a general advantage over deterministic checks remain unestablished.
 
 Each new experiment should update this claim map without replacing negative or inconclusive observations. A bounded development result does not by itself justify a general reliability claim or a deployed trust score.

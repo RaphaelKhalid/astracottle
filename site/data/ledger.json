@@ -7,24 +7,24 @@
       "date": "2026-09-08",
       "title": "Can public state forecast future violations?",
       "topic": "preaction forecasting carried state integrity fault one bit control source comparison",
-      "status": "registered",
-      "statusLabel": "Registered",
-      "decisions": 0,
+      "status": "completed",
+      "statusLabel": "Completed",
+      "decisions": 40,
       "question": "Does seeing the actual carried inventory improve forecasts of the next actor action, beyond an independent aid or one bit of integrity information?",
-      "findingLabel": "PROSPECTIVE PRE-ACTION MECHANISM PROBE",
-      "finding": "Four worlds selected only from original source definitions each receive an intact inventory and one controlled integrity fault. Four independent forecasts are committed before each fresh actor produces an action. The actual later action is graded against unchanged original sources.",
+      "findingLabel": "PRE-ACTION SIGNAL / SIMPLE INTEGRITY RULE ALSO PERFECT",
+      "finding": "All four corrupted-state trials produced violations; all four intact trials succeeded safely. Actual-state forecasts identified all four future violations. The deterministic rule that every mismatch predicts a violation also scored perfectly on this controlled fault set.",
       "stats": [
         {
-          "value": 8,
-          "label": "actor trials"
+          "value": "4 / 4",
+          "label": "violations forecast with state"
         },
         {
-          "value": 4,
-          "label": "forecast views"
+          "value": "0.00109",
+          "label": "actual-state Brier score"
         },
         {
-          "value": 40,
-          "label": "maximum calls"
+          "value": 0,
+          "label": "deterministic heuristic Brier"
         }
       ],
       "setup": [
@@ -40,8 +40,52 @@
         "A forecast near 0.5 can be reasonable under the disclosed balanced design. Fixed flags and eight outcomes establish neither probability calibration nor deployment risk; no readiness or improvement gate applies.",
         "Public-state prediction does not recover private chain of thought or establish an internal reasoning mechanism. An actor may follow its supplied inventory while conflicting with the unchanged original-source label."
       ],
-      "next": "Report all intact and corrupted outcomes, task utility, Brier scores, flags, paired view differences, and the one-bit heuristic. Separate fault-induced behavior from forecasting gains; null or harmful differences remain publishable.",
-      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/main/experiments/experiment06/plan.json"
+      "next": "Prepare a separate small control containing intact, harmful-mismatch and harmless-mismatch states. Compare detailed state with an integrity bit, a conservative mismatch rule, a mixture-risk rule and a query-aware deterministic check before making an integration or trust claim.",
+      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/4a78127512b426a4ea1273d00b9f673328d38673/experiments/experiment06/plan.json",
+      "data": "/data/experiment-06.json",
+      "report": "https://github.com/RaphaelKhalid/astracottle/blob/main/docs/experiment-06-report.md",
+      "results": {
+        "caption": "Eight actual later actions under controlled state faults. Lower Brier is better; 0.5 flags are uncalibrated. Harmless mismatches were not included.",
+        "columns": [
+          "Forecast view / rule",
+          "Violations flagged",
+          "False flags on safe actions",
+          "Overall mean Brier"
+        ],
+        "rows": [
+          [
+            "Original evidence only",
+            "0 / 4",
+            "0 / 4",
+            "0.3040000"
+          ],
+          [
+            "Actual actor state",
+            "4 / 4",
+            "0 / 4",
+            "0.0010875"
+          ],
+          [
+            "Independent source inventory",
+            "0 / 4",
+            "0 / 4",
+            "0.2607625"
+          ],
+          [
+            "Model given integrity bit",
+            "2 / 4",
+            "0 / 4",
+            "0.1433375"
+          ],
+          [
+            "Deterministic mismatch heuristic",
+            "4 / 4",
+            "0 / 4",
+            "0.0000000"
+          ]
+        ]
+      },
+      "interpretation": "Seeing the actual supplied state improved model forecasts on these eight later actions, including over a model given only the integrity bit. The observable mechanism is access to the mistaken input premise before action selection. This does not reveal private reasoning. Every injected mismatch was selected to change a decision-relevant predicate; harmless discrepancies were absent, so the perfect mismatch heuristic is a narrow result."
     },
     {
       "id": "exp-005",
@@ -49,24 +93,24 @@
       "date": "2026-09-08",
       "title": "Carried state or independent reviewer aid?",
       "topic": "carried record independent evidence reviewer assistance constructed controls trust",
-      "status": "running",
-      "statusLabel": "Running",
-      "decisions": 0,
+      "status": "completed",
+      "statusLabel": "Completed",
+      "decisions": 56,
       "question": "Does the exact inventory carried by an actor help review more than an independently generated inventory with matching inputs?",
-      "findingLabel": "PROSPECTIVE FIXED-CANDIDATE DIAGNOSTIC",
-      "finding": "All eight request-hidden candidates from Experiment 004 are fixed before review. Three new reviewer views compare no inventory, the actual carried inventory, and an independently generated inventory. Deliberately altered candidates form a separate diagnostic cohort.",
+      "findingLabel": "ALL VIEWS AT DETECTION CEILING / IDENTICAL INVENTORIES",
+      "finding": "Every view accepted all eight safe actor proposals and caught all eight constructed faults. All eight independent inventories were identical to the carried inventories. No added flag-level detection benefit was observed on these fixed candidates.",
       "stats": [
         {
-          "value": 8,
-          "label": "natural candidates"
+          "value": "8 / 8",
+          "label": "identical inventory pairs"
         },
         {
-          "value": 8,
-          "label": "constructed faults"
+          "value": "8 / 8",
+          "label": "faults caught by every view"
         },
         {
-          "value": 56,
-          "label": "scheduled calls"
+          "value": 0,
+          "label": "false flags in every view"
         }
       ],
       "setup": [
@@ -81,8 +125,65 @@
         "Eight worlds share two templates. One sample per view and an uncalibrated 0.5 threshold do not establish a trust score or main-study readiness.",
         "If the two inventories are identical, different reviewer outputs reflect stochastic repeated review of the same inputs, not a provenance effect."
       ],
-      "next": "Report natural and constructed cohorts separately, with paired flags, probability shifts, false flags, and missing reviews. Treat equal or harmful artifact performance as publishable results.",
-      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/50e37510b11a76c4278af8ad740bf644bf1ba923/experiments/experiment05/plan.json"
+      "next": "Experiment 006 tests a different target: forecasting a future action before it exists, using controlled state faults and a one-bit integrity control. Keep this separate from natural-error detection and from private-reasoning claims.",
+      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/50e37510b11a76c4278af8ad740bf644bf1ba923/experiments/experiment05/plan.json",
+      "data": "/data/experiment-05.json",
+      "report": "https://github.com/RaphaelKhalid/astracottle/blob/main/docs/experiment-05-report.md",
+      "results": {
+        "caption": "Natural and constructed populations are separate. Threshold 0.5 is uncalibrated; lower Brier is better within a cohort.",
+        "columns": [
+          "Cohort",
+          "Review view",
+          "TP / FN / FP / TN",
+          "Missing",
+          "Mean Brier"
+        ],
+        "rows": [
+          [
+            "Natural actor candidates",
+            "No inventory",
+            "0 / 0 / 0 / 8",
+            0,
+            "2.5125e-05"
+          ],
+          [
+            "Natural actor candidates",
+            "Carried inventory",
+            "0 / 0 / 0 / 8",
+            0,
+            "6.25e-07"
+          ],
+          [
+            "Natural actor candidates",
+            "Independent inventory",
+            "0 / 0 / 0 / 8",
+            0,
+            "7.5e-07"
+          ],
+          [
+            "Experimenter-constructed faults",
+            "No inventory",
+            "8 / 0 / 0 / 0",
+            0,
+            "0"
+          ],
+          [
+            "Experimenter-constructed faults",
+            "Carried inventory",
+            "8 / 0 / 0 / 0",
+            0,
+            "0"
+          ],
+          [
+            "Experimenter-constructed faults",
+            "Independent inventory",
+            "8 / 0 / 0 / 0",
+            0,
+            "0"
+          ]
+        ]
+      },
+      "interpretation": "Natural-error sensitivity remains undefined because all original candidates were safe. Constructed faults were detected even without an inventory, leaving no flag-level improvement headroom. Carried and independent inputs were identical; their tiny probability differences are repeated measurements, not a carried-state or provenance effect. This result does not establish population-level equivalence or calibrated trust."
     },
     {
       "id": "exp-004",
