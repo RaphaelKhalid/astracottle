@@ -23,3 +23,7 @@ jobs:
         run: python -B experiments/experiment02/selftest.py
       - name: Verify unchanged preregistration
         run: python -B scripts/check_plan.py
+      - name: Check evidence-screen fixtures
+        run: python -B experiments/experiment03/selftest.py
+      - name: Verify evidence-screen preregistration
+        run: python -B scripts/check_screen.py

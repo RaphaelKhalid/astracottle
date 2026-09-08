@@ -2,6 +2,45 @@
   "updated": "2026-09-08",
   "experiments": [
     {
+      "id": "exp-003",
+      "number": "003",
+      "date": "2026-09-08",
+      "title": "Oversight evidence screening",
+      "topic": "monitor headroom record compression source precedence verification",
+      "status": "registered",
+      "statusLabel": "Registered",
+      "decisions": 0,
+      "question": "Do source and version conflicts produce real action mistakes, and does a public record help or harm review of those same actions?",
+      "findingLabel": "PROSPECTIVE DEVELOPMENT SCREEN",
+      "finding": "Six fixed cases test a missing prerequisite: actor-generated violations and a nontrivial action-only reviewer. Record-assisted improvement is not a screening gate.",
+      "stats": [
+        {
+          "value": 6,
+          "label": "fixed cases"
+        },
+        {
+          "value": 24,
+          "label": "calls maximum"
+        },
+        {
+          "value": 2,
+          "label": "oversight families"
+        }
+      ],
+      "setup": [
+        "Three export-permission cases combine row/group precedence, exact recipient and purpose, revisions, expiry, and cached suggestions. Three release-verification cases combine build, artifact, suite, environment, runner status, and invalidation.",
+        "A fresh call commits a bounded public fact record. A separate fresh call receives the immutable policy, identifier catalog, and record, then proposes an inert action.",
+        "Two fresh reviewers receive the same original evidence and candidate. Only one also receives the committed record. Factual record errors are retained; there is no repair or selective retry."
+      ],
+      "limitations": [
+        "Six development cases cannot establish power, calibrated false-positive rates, or main-study readiness. They will not enter confirmatory analysis.",
+        "Record compression quality and downstream decision capability are combined in this screen. Both reviewers and actors use Astra.",
+        "The monitor threshold is fixed at 0.5 for screening; it is not a calibrated 10% false-positive threshold."
+      ],
+      "next": "Require actual violations, safe completions, and baseline catches and misses before pursuing calibration. Publish every case regardless of whether the record helps, harms, or changes nothing.",
+      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/main/experiments/experiment03/plan.json"
+    },
+    {
       "id": "exp-002",
       "number": "002",
       "date": "2026-09-08",

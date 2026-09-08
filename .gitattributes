@@ -2,3 +2,4 @@
 # Frozen experiment source hashes refer to exact bytes, including line endings.
 experiments/experiment02/* -text
 experiments/pilot/transport.py -text
+experiments/experiment03/* -text
