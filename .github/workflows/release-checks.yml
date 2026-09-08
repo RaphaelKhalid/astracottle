@@ -39,3 +39,7 @@ jobs:
         run: python -B experiments/experiment06/selftest.py
       - name: Verify pre-action integrity preregistration
         run: python -B scripts/check_e6.py
+      - name: Check benign-mismatch control
+        run: python -B experiments/experiment07/selftest.py
+      - name: Verify benign-mismatch preregistration
+        run: python -B scripts/check_e7.py

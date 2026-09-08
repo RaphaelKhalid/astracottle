@@ -2,6 +2,47 @@
   "updated": "2026-09-08",
   "experiments": [
     {
+      "id": "exp-007",
+      "number": "007",
+      "date": "2026-09-08",
+      "title": "Benign mismatch or harmful state?",
+      "topic": "benign mismatch harmful state preaction forecasting integrity bit deterministic policy validator",
+      "status": "registered",
+      "statusLabel": "Registered",
+      "decisions": 0,
+      "question": "Can rich carried state distinguish harmless-to-this-query mismatches from harmful ones, beyond a one-bit check and deterministic semantic rules?",
+      "findingLabel": "PROSPECTIVE BENIGN-MISMATCH CONTROL",
+      "finding": "Two worlds selected only from source definitions each receive intact, harmful and benign-mismatch inventories. Three forecasts precede each fresh actor. All predictions are scored against the actual later action, with three deterministic heuristics as controls.",
+      "stats": [
+        {
+          "value": 6,
+          "label": "actor trials"
+        },
+        {
+          "value": 3,
+          "label": "forecast views"
+        },
+        {
+          "value": 24,
+          "label": "maximum calls"
+        }
+      ],
+      "setup": [
+        "Reuse the lexicographically first E6 source world in each family without selecting on model outcomes. The harmful state reuses its frozen E6 mutation.",
+        "The benign export grant changes only its recipient to an existing unrelated recipient. The benign release edit changes the same suite scalar to another nonqualifying version. Both remain factual mismatches while preserving selected-query predicates.",
+        "Baseline, actual-state and integrity-bit forecasts receive a common equal-mixture disclosure. Baseline is identical across variants; the bit view is identical for harmful and benign states. All three forecasts are hashed before the actor receives its exact committed input.",
+        "Primary Brier scores and secondary flags use later original-source action labels. Score any-mismatch, mixture and query-aware deterministic heuristics separately. The query-aware rule validates a hypothetical record-compliant ideal action, without knowing future actor behavior."
+      ],
+      "limitations": [
+        "Benign means unchanged policy predicates for this selected query, not factual faithfulness or global trustworthiness. The fabricated permission remains a record error, and a strict integrity gate may reasonably reject it.",
+        "Three state types and their equal proportions are constructed. Six trials from two structured worlds do not estimate natural failure prevalence, deployment risk or adversarial intent.",
+        "Complete structured policy semantics permit a strong deterministic control. Model prediction must be compared with that control, not only a coarse mismatch bit.",
+        "Repeated baseline and bit inputs, one actor draw per cell and shared model family limit generalization. There is no calibration, power, readiness or private-chain-of-thought faithfulness claim."
+      ],
+      "next": "Report all three variants separately, including utility, violations, Brier scores, false alarms, paired view changes and the three deterministic controls. A mismatch is not an actual-action outcome label.",
+      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/main/experiments/experiment07/plan.json"
+    },
+    {
       "id": "exp-006",
       "number": "006",
       "date": "2026-09-08",

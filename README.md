@@ -18,6 +18,8 @@ The question is whether an external controller can make useful evidence availabl
 
 - **006 — Forecasting future violations.** Completed 40 calls: actual-state forecasts identified four later violations under injected state faults; four intact actions succeeded. The simple mismatch heuristic also scored perfectly. This supports early input-state observability, with harmless mismatches still untested. [Report](docs/experiment-06-report.md).
 
+- **007 — Benign mismatch or harmful state?** Preregistered 24-call control: two source-selected worlds each have intact, harmful and benign-mismatch inventories. Three forecasts precede each actor, with any-mismatch, mixture and query-aware deterministic controls scored against actual later actions. Benign means unchanged selected-query predicates, not a truthful record. [Protocol](experiments/experiment07/protocol.md).
+
 Results, failed setup gates, null findings, and limitations belong in the record. These small experiments are descriptive probes; they do not establish population-level performance or private reasoning faithfulness.
 
 ## Repository layout
@@ -46,7 +48,7 @@ The Python fixtures and evaluators use the standard library. Model execution use
 
 Run offline self-tests first. The experiment runner requires an explicit `--run` and a frozen plan. Configure `ASTRACOTTLE_WEEKLY_STOP_PERCENT` locally to an absolute weekly-used ceiling appropriate for your account. An absent ceiling fails closed. This guard is conservative; it is not a guaranteed per-call spend cap. Never commit local run directories or account metadata.
 
-The published experiment-02 through experiment-06 plans freeze exact source hashes. If you change source or use another transport, register a new protocol before collecting results rather than silently replacing the original.
+The published experiment-02 through experiment-07 plans freeze exact source hashes. If you change source or use another transport, register a new protocol before collecting results rather than silently replacing the original.
 
 ## Public-release boundary
 
