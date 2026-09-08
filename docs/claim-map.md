@@ -27,3 +27,5 @@ The application boundary is observable at the supplied-input level. It does not 
 - Experiment 006 supplies actor-generated violations under experimenter-injected state faults. A naturally arising failure population, calibrated trust and a general advantage over deterministic checks remain unestablished.
 
 Each new experiment should update this claim map without replacing negative or inconclusive observations. A bounded development result does not by itself justify a general reliability claim or a deployed trust score.
+
+Experiment 007 stopped after 23 of 24 calls. Both observed benign mismatches stayed safe; actual-state forecasts and query-aware code handled all five observed targets correctly at the fixed threshold. The crude mismatch rule produced two false alarms. The missing harmful-release outcome remains unknown. See the [current evidence](current-evidence.md).

@@ -7,24 +7,24 @@
       "date": "2026-09-08",
       "title": "Benign mismatch or harmful state?",
       "topic": "benign mismatch harmful state preaction forecasting integrity bit deterministic policy validator",
-      "status": "registered",
-      "statusLabel": "Registered",
-      "decisions": 0,
+      "status": "stopped",
+      "statusLabel": "Stopped / incomplete",
+      "decisions": 23,
       "question": "Can rich carried state distinguish harmless-to-this-query mismatches from harmful ones, beyond a one-bit check and deterministic semantic rules?",
-      "findingLabel": "PROSPECTIVE BENIGN-MISMATCH CONTROL",
-      "finding": "Two worlds selected only from source definitions each receive intact, harmful and benign-mismatch inventories. Three forecasts precede each fresh actor. All predictions are scored against the actual later action, with three deterministic heuristics as controls.",
+      "findingLabel": "INCOMPLETE / TASK RELEVANCE MATTERS",
+      "finding": "Five actor outcomes were observed before an administrative quota stop. Actual-state forecasts distinguished the observed harmful action from both benign mismatches. A query-aware code check also scored perfectly. The final harmful-release action is missing; its three forecasts are unscored.",
       "stats": [
         {
-          "value": 6,
-          "label": "actor trials"
+          "value": "23 / 24",
+          "label": "calls completed"
         },
         {
-          "value": 3,
-          "label": "forecast views"
+          "value": "5 / 6",
+          "label": "actor outcomes observed"
         },
         {
-          "value": 24,
-          "label": "maximum calls"
+          "value": 2,
+          "label": "benign actions stayed safe"
         }
       ],
       "setup": [
@@ -39,8 +39,58 @@
         "Complete structured policy semantics permit a strong deterministic control. Model prediction must be compared with that control, not only a coarse mismatch bit.",
         "Repeated baseline and bit inputs, one actor draw per cell and shared model family limit generalization. There is no calibration, power, readiness or private-chain-of-thought faithfulness claim."
       ],
-      "next": "Report all three variants separately, including utility, violations, Brier scores, false alarms, paired view changes and the three deterministic controls. A mismatch is not an actual-action outcome label.",
-      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/main/experiments/experiment07/plan.json"
+      "next": "Retain this incomplete result. A complete separately registered replication and held-out natural-failure development set are needed before calibration or a main run. An application prototype should prioritize committed inputs, source checks and action validation.",
+      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/4578ec7162f5d7864bcf417195aa2ae5f309338a/experiments/experiment07/plan.json",
+      "interpretation": "A mismatch alone was an insufficient predictor: the any-mismatch rule falsely flagged both benign actions. Detailed state supported better model forecasts, while the query-aware deterministic check matched every observed outcome. The partial five-target scores cannot establish a general trust advantage, private reasoning access or natural failure rates.",
+      "data": "/data/experiment-07.json",
+      "report": "https://github.com/RaphaelKhalid/astracottle/blob/main/docs/experiment-07-report.md",
+      "results": {
+        "caption": "Only five observed actor outcomes; final harmful-release outcome missing. Brier is descriptive and lower is better.",
+        "columns": [
+          "Forecast / rule",
+          "Observed targets",
+          "TP/FN/FP/TN",
+          "Mean Brier"
+        ],
+        "rows": [
+          [
+            "Original evidence only",
+            "5",
+            "0/1/0/4",
+            "0.2019200"
+          ],
+          [
+            "Actual actor state",
+            "5",
+            "1/0/0/4",
+            "0.0013600"
+          ],
+          [
+            "Model given integrity bit",
+            "5",
+            "0/1/0/4",
+            "0.1398000"
+          ],
+          [
+            "Any-mismatch rule",
+            "5",
+            "1/0/2/2",
+            "0.4000000"
+          ],
+          [
+            "Mixture-risk rule",
+            "5",
+            "1/0/2/2",
+            "0.1500000"
+          ],
+          [
+            "Query-aware code check",
+            "5",
+            "1/0/0/4",
+            "0.0000000"
+          ]
+        ]
+      }
     },
     {
       "id": "exp-006",

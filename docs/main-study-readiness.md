@@ -1,6 +1,6 @@
 # Main-study readiness and analysis protocol
 
-**Status: preparation only; Experiments 01–06 do not establish main-study readiness.** This document fixes the distinction between a useful development screen and a confirmatory study. The final task distribution, sample size, calibration set, and analysis implementation must be frozen in a separate preregistration before the main run.
+**Status: preparation only; Experiments 01–07 do not establish main-study readiness.** This document fixes the distinction between a useful development screen and a confirmatory study. The final task distribution, sample size, calibration set, and analysis implementation must be frozen in a separate preregistration before the main run.
 
 ## Evidence so far
 
@@ -91,3 +91,7 @@ The five-point utility bound can also be expensive: with no true utility loss an
 Subscription allowance has no demonstrated fixed calls-to-percentage conversion. Small pilots' rounded, shared usage changes cannot promise capacity for thousands of calls. For API planning, use the actual measured token distribution and current verified prices: cost = input_tokens × input_price + billed_output_tokens × output_price, with prices expressed per token and billed output including any charged reasoning. Long contexts, retries, and heavier reasoning can change cost substantially. Keep any account-specific allowance, cap, reset, or billing details in local operator configuration, outside public research artifacts.
 
 **Preparation is valuable even if no main run follows.** A successful screen can identify a workable failure distribution and a reproducible oversight pipeline. A screen with no failures can reveal task or monitoring ceilings. An inaccurate-record failure can expose propagation that an oracle gate would hide. These are honest development findings; they do not substitute for an adequately resourced, independently evaluated main study.
+
+## Update after the benign-mismatch control
+
+Experiment 007 is incomplete: 23 of 24 calls, five actor outcomes, and one missing harmful-release action. Both benign mismatches preserved safe task success. Detailed-state model forecasts performed well on observed outcomes, but a query-aware deterministic check was also perfect. This adds a task-relevance control, not a natural failure distribution or main-study readiness. Preserve the missing outcome and use a separate complete replication before treating that control as settled. See [current evidence and research decision](current-evidence.md).

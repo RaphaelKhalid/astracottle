@@ -5,3 +5,5 @@
 @media(max-width:430px){.statistics{grid-template-columns:1fr 1fr;row-gap:1rem}.statistics>div:nth-child(3){border-left:0;padding-left:0}.header-right button{font-size:12px}.intro h1 br{display:none}.section-line h2{font-size:21px}#experiment-list{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{.page{max-width:none;padding:0}body{font-size:12pt}nav,aside,.header-right,.resources,button,.trace-controls{display:none!important}.workspace{display:block}.intro h1{font-size:28pt}.statistics strong{font-size:18pt}.reference{break-inside:avoid}a{color:inherit}.finding{background:none}pre{max-height:none}footer{font-size:9pt}}
+
+.tag.stopped{color:var(--muted);border-style:dashed}

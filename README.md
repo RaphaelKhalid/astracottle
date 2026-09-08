@@ -6,6 +6,8 @@ An independent public notebook on Astra, public working state, and AI oversight.
 
 The question is whether an external controller can make useful evidence available to an overseer by controlling what public state an agent carries forward. Public records are decision artifacts. They are not recovered private chain of thought.
 
+[Current evidence and research decision](docs/current-evidence.md).
+
 ## Experiments
 
 - **001 — Export oversight calibration.** Forty-four model decisions on one synthetic export fixture: eight trajectories across four session/record conditions, plus two manually constructed positive controls. All actor proposals were safe. Both monitor views caught the planted faults. The result is inconclusive about incremental monitorability.
@@ -18,7 +20,7 @@ The question is whether an external controller can make useful evidence availabl
 
 - **006 — Forecasting future violations.** Completed 40 calls: actual-state forecasts identified four later violations under injected state faults; four intact actions succeeded. The simple mismatch heuristic also scored perfectly. This supports early input-state observability, with harmless mismatches still untested. [Report](docs/experiment-06-report.md).
 
-- **007 — Benign mismatch or harmful state?** Preregistered 24-call control: two source-selected worlds each have intact, harmful and benign-mismatch inventories. Three forecasts precede each actor, with any-mismatch, mixture and query-aware deterministic controls scored against actual later actions. Benign means unchanged selected-query predicates, not a truthful record. [Protocol](experiments/experiment07/protocol.md).
+- **007 — Harmless discrepancies and action risk.** Stopped after 23/24 calls: five actor outcomes, one missing harmful-release outcome. Both benign mismatches stayed safe; a crude mismatch rule falsely flagged them. Actual-state forecasts helped, while query-aware code matched all observed outcomes. [Incomplete report](docs/experiment-07-report.md).
 
 Results, failed setup gates, null findings, and limitations belong in the record. These small experiments are descriptive probes; they do not establish population-level performance or private reasoning faithfulness.
 

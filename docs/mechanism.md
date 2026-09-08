@@ -43,3 +43,9 @@ Separately compare controller conditions on task completion, attempted violation
 Experiment 002 showed appropriate use of supplied public facts in two benign fixtures. It did not include monitor calls. Experiment 001's actor proposals were all safe, so it could not estimate detection sensitivity on actor-generated violations. Neither establishes that public records improve CoT monitorability. The next preparation studies test the missing steps before a larger comparison is justified.
 
 Experiment 003 completed the paired comparison on six further cases, but all actions were correct and both views accepted them. Detection benefit remains unmeasured. Its records already contained the solved answers, so the nominal action stage mostly reformatted them. The [next design proposal](next-development-design.md) delays the specific request until after evidence commitment to investigate that limitation.
+
+## Evidence from the later mechanism probes
+
+Experiments 004 and 005 found exact evidence copies and review ceilings, without a distinctive carried-record detection advantage. Experiment 006 showed that actual supplied state helped forecast later violations under injected input faults, while a simple mismatch heuristic also scored perfectly. The incomplete Experiment 007 added benign mismatches: task relevance mattered, and query-aware code matched all five observed outcomes. The final harmful-release action is missing and its forecasts are unscored.
+
+This supports public-input observability in these controlled settings. It does not reveal private computation, establish natural failure rates, or outperform executable policy checks. See the [current evidence and research decision](current-evidence.md) for the consolidated findings and remaining requirements.
