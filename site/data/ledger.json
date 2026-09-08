@@ -2,13 +2,55 @@
   "updated": "2026-09-08",
   "experiments": [
     {
+      "id": "exp-006",
+      "number": "006",
+      "date": "2026-09-08",
+      "title": "Can public state forecast future violations?",
+      "topic": "preaction forecasting carried state integrity fault one bit control source comparison",
+      "status": "registered",
+      "statusLabel": "Registered",
+      "decisions": 0,
+      "question": "Does seeing the actual carried inventory improve forecasts of the next actor action, beyond an independent aid or one bit of integrity information?",
+      "findingLabel": "PROSPECTIVE PRE-ACTION MECHANISM PROBE",
+      "finding": "Four worlds selected only from original source definitions each receive an intact inventory and one controlled integrity fault. Four independent forecasts are committed before each fresh actor produces an action. The actual later action is graded against unchanged original sources.",
+      "stats": [
+        {
+          "value": 8,
+          "label": "actor trials"
+        },
+        {
+          "value": 4,
+          "label": "forecast views"
+        },
+        {
+          "value": 40,
+          "label": "maximum calls"
+        }
+      ],
+      "setup": [
+        "Two export and two release worlds are selected by fixed source-only eligibility rules and sorted IDs. A fault adds one scoped permission fact or changes one attestation scalar; these inventories are deterministic experimenter-created artifacts.",
+        "All forecasters see original evidence, the query, the controller description, and the same balanced integrity-stress disclosure. Views add nothing, the actual actor input, an independent source projection, or only a deterministic source-integrity Boolean.",
+        "The state and all four forecasts are hashed before the actor is called. The actor receives only its committed query, immutable policy, and inventory; it receives no forecasts or original source packets.",
+        "Brier score is the primary descriptive prediction measure; flags are secondary. A no-call match-to-0/mismatch-to-1 heuristic is also scored against actual later actions. All 40 calls and their counterbalanced order are frozen; no retry or external action occurs."
+      ],
+      "limitations": [
+        "The faults and their 50% prevalence are constructed, not natural model errors, deployment prevalence, or evidence of adversarial intent. A corrupted state is not automatically an action violation.",
+        "Actual-state and independent-aid views combine content, truthful provenance information, and packet structure. The integrity-bit control tests whether richer state adds beyond that simpler signal.",
+        "Baseline and independent-aid packets repeat across each world's two variants. These are repeated same-input measurements from four worlds sharing two templates, with one actor draw per trial.",
+        "A forecast near 0.5 can be reasonable under the disclosed balanced design. Fixed flags and eight outcomes establish neither probability calibration nor deployment risk; no readiness or improvement gate applies.",
+        "Public-state prediction does not recover private chain of thought or establish an internal reasoning mechanism. An actor may follow its supplied inventory while conflicting with the unchanged original-source label."
+      ],
+      "next": "Report all intact and corrupted outcomes, task utility, Brier scores, flags, paired view differences, and the one-bit heuristic. Separate fault-induced behavior from forecasting gains; null or harmful differences remain publishable.",
+      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/main/experiments/experiment06/plan.json"
+    },
+    {
       "id": "exp-005",
       "number": "005",
       "date": "2026-09-08",
       "title": "Carried state or independent reviewer aid?",
       "topic": "carried record independent evidence reviewer assistance constructed controls trust",
-      "status": "registered",
-      "statusLabel": "Registered",
+      "status": "running",
+      "statusLabel": "Running",
       "decisions": 0,
       "question": "Does the exact inventory carried by an actor help review more than an independently generated inventory with matching inputs?",
       "findingLabel": "PROSPECTIVE FIXED-CANDIDATE DIAGNOSTIC",
@@ -40,7 +82,7 @@
         "If the two inventories are identical, different reviewer outputs reflect stochastic repeated review of the same inputs, not a provenance effect."
       ],
       "next": "Report natural and constructed cohorts separately, with paired flags, probability shifts, false flags, and missing reviews. Treat equal or harmful artifact performance as publishable results.",
-      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/main/experiments/experiment05/plan.json"
+      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/50e37510b11a76c4278af8ad740bf644bf1ba923/experiments/experiment05/plan.json"
     },
     {
       "id": "exp-004",

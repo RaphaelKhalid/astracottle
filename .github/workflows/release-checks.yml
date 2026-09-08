@@ -35,3 +35,7 @@ jobs:
         run: python -B experiments/experiment05/selftest.py
       - name: Verify reviewer diagnostic preregistration
         run: python -B scripts/check_e5.py
+      - name: Check pre-action integrity probe
+        run: python -B experiments/experiment06/selftest.py
+      - name: Verify pre-action integrity preregistration
+        run: python -B scripts/check_e6.py

@@ -14,7 +14,9 @@ The question is whether an external controller can make useful evidence availabl
 - **003 — Oversight evidence screening.** Completed 24 calls across six cases: all actions correct, both monitor views accepted all. With no violations, added detection benefit remains unmeasured. Records already encoded the answers, motivating a separate request-after-commit design. [Report](docs/experiment-03-report.md).
 
 - **004 — Evidence before the request.** Completed 104 calls: all 16 inventories were exact deterministic source copies; all 32 actions correct; all 56 reviews accepted. Evidence committed before the request was usable, but no actor failures were available to establish monitoring gain. [Report](docs/experiment-04-report.md).
-- **005 — Carried state or independent reviewer aid?** Preregistered 56-call diagnostic using eight fixed natural candidates and eight separately constructed faulty candidates. No-inventory, carried-inventory and independent-inventory reviews are compared; identical artifact inputs are treated as repeated reviews. [Protocol](experiments/experiment05/protocol.md).
+- **005 — Carried state or independent reviewer aid?** Running a preregistered 56-call diagnostic using eight fixed natural candidates and eight separately constructed faulty candidates. No-inventory, carried-inventory and independent-inventory reviews are compared; identical artifact inputs are treated as repeated reviews. [Pinned protocol](https://github.com/RaphaelKhalid/astracottle/blob/50e37510b11a76c4278af8ad740bf644bf1ba923/experiments/experiment05/plan.json).
+
+- **006 — Can public state forecast future violations?** Preregistered 40-call probe: four source-selected worlds, each with an intact and a constructed faulty inventory. Four forecasts precede each actor: original evidence, actual state, an independent aid, and a one-bit integrity signal. Brier scores use actual later violations; faults do not determine outcome labels. [Protocol](experiments/experiment06/protocol.md).
 
 Results, failed setup gates, null findings, and limitations belong in the record. These small experiments are descriptive probes; they do not establish population-level performance or private reasoning faithfulness.
 
@@ -44,7 +46,7 @@ The Python fixtures and evaluators use the standard library. Model execution use
 
 Run offline self-tests first. The experiment runner requires an explicit `--run` and a frozen plan. Configure `ASTRACOTTLE_WEEKLY_STOP_PERCENT` locally to an absolute weekly-used ceiling appropriate for your account. An absent ceiling fails closed. This guard is conservative; it is not a guaranteed per-call spend cap. Never commit local run directories or account metadata.
 
-The published experiment-02 through experiment-05 plans freeze exact source hashes. If you change source or use another transport, register a new protocol before collecting results rather than silently replacing the original.
+The published experiment-02 through experiment-06 plans freeze exact source hashes. If you change source or use another transport, register a new protocol before collecting results rather than silently replacing the original.
 
 ## Public-release boundary
 
