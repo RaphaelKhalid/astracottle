@@ -31,3 +31,7 @@ jobs:
         run: python -B experiments/experiment04/selftest.py
       - name: Verify late-request preregistration
         run: python -B scripts/check_e4.py
+      - name: Check reviewer diagnostic
+        run: python -B experiments/experiment05/selftest.py
+      - name: Verify reviewer diagnostic preregistration
+        run: python -B scripts/check_e5.py

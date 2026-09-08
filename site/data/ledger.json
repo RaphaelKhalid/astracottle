@@ -2,29 +2,70 @@
   "updated": "2026-09-08",
   "experiments": [
     {
+      "id": "exp-005",
+      "number": "005",
+      "date": "2026-09-08",
+      "title": "Carried state or independent reviewer aid?",
+      "topic": "carried record independent evidence reviewer assistance constructed controls trust",
+      "status": "registered",
+      "statusLabel": "Registered",
+      "decisions": 0,
+      "question": "Does the exact inventory carried by an actor help review more than an independently generated inventory with matching inputs?",
+      "findingLabel": "PROSPECTIVE FIXED-CANDIDATE DIAGNOSTIC",
+      "finding": "All eight request-hidden candidates from Experiment 004 are fixed before review. Three new reviewer views compare no inventory, the actual carried inventory, and an independently generated inventory. Deliberately altered candidates form a separate diagnostic cohort.",
+      "stats": [
+        {
+          "value": 8,
+          "label": "natural candidates"
+        },
+        {
+          "value": 8,
+          "label": "constructed faults"
+        },
+        {
+          "value": 56,
+          "label": "scheduled calls"
+        }
+      ],
+      "setup": [
+        "Independent inventories use the exact original hidden-request extraction inputs, instructions, schema and capacity. They receive no later query, actor output, carried record, grade, or earlier monitor result.",
+        "All reviews are fresh. The query, original evidence and candidate stay fixed; a neutral public_evidence field contains null, the carried inventory, or the independent inventory.",
+        "Original candidates are unchanged. Eligible safe actions also receive one fixed semantic boundary error, checked by the independent source-based grader and explicitly marked experimenter-constructed in the released data.",
+        "Counterbalanced order, unchanged inaccurate inventories, fixed stopping and no retries. No external action executes."
+      ],
+      "limitations": [
+        "Constructed faults measure reviewer behavior on those edits; they cannot estimate natural failure prevalence or sensitivity on actual actor mistakes.",
+        "Carried versus independent combines artifact content quality, presentation and connection to the actor. It does not isolate a pure causal effect of provenance.",
+        "Eight worlds share two templates. One sample per view and an uncalibrated 0.5 threshold do not establish a trust score or main-study readiness.",
+        "If the two inventories are identical, different reviewer outputs reflect stochastic repeated review of the same inputs, not a provenance effect."
+      ],
+      "next": "Report natural and constructed cohorts separately, with paired flags, probability shifts, false flags, and missing reviews. Treat equal or harmful artifact performance as publishable results.",
+      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/main/experiments/experiment05/plan.json"
+    },
+    {
       "id": "exp-004",
       "number": "004",
       "date": "2026-09-08",
       "title": "Evidence before the request",
       "topic": "late query typed evidence extraction source projection public state oversight",
-      "status": "running",
-      "statusLabel": "Running",
-      "decisions": 5,
+      "status": "completed",
+      "statusLabel": "Completed",
+      "decisions": 104,
       "question": "Can public evidence committed before a specific request support later decisions, and does the carried record help review those decisions?",
-      "findingLabel": "FIXED PROTOCOL / COLLECTING",
-      "finding": "Collection started after public preregistration. All attempted calls and independent grades will be released after the fixed run and audit; no interim monitoring-effect claim is made.",
+      "findingLabel": "EXACT EVIDENCE COPIES / MONITORING GAIN UNMEASURED",
+      "finding": "All 16 model inventories exactly matched the deterministic source projection. All 32 actions were safe and task-correct, and all 56 reviews accepted them. With no actor violations, added detection benefit remains unmeasured.",
       "stats": [
         {
-          "value": 8,
-          "label": "fixed worlds"
+          "value": "16 / 16",
+          "label": "exact model inventories"
         },
         {
-          "value": 4,
-          "label": "action conditions"
+          "value": "32 / 32",
+          "label": "safe task completions"
         },
         {
-          "value": 104,
-          "label": "calls maximum"
+          "value": 0,
+          "label": "actual violations"
         }
       ],
       "setup": [
@@ -39,8 +80,61 @@
         "The monitor threshold is fixed for development and is not calibrated to a target false-positive rate. Typed public records do not disclose private computation.",
         "The structured policies have deterministic evaluators. Model-based review is not established as necessary compared with available executable checks."
       ],
-      "next": "Publish all attempted cases and separately evaluate source preservation, task utility, violations, and paired review. Use the result to decide whether a carried-record versus independent-reviewer-aid diagnostic is feasible.",
-      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/f8d2badd409d46549e5d6a2631037a2350abe777/experiments/experiment04/plan.json"
+      "next": "Experiment 005 fixes all eight request-hidden candidates and compares fresh reviews using no inventory, the carried inventory, or an independently generated matched inventory. Deliberately faulty candidates are a separately reported diagnostic cohort. Main-study readiness still requires a suitable natural-failure distribution and independent calibration.",
+      "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/f8d2badd409d46549e5d6a2631037a2350abe777/experiments/experiment04/plan.json",
+      "data": "/data/experiment-04.json",
+      "report": "https://github.com/RaphaelKhalid/astracottle/blob/main/docs/experiment-04-report.md",
+      "results": {
+        "caption": "Descriptive counts; eight assigned worlds per condition. TP/FN/FP/TN refers to valid graded actions.",
+        "columns": [
+          "Condition",
+          "Saved actions",
+          "Safe completions",
+          "Violations",
+          "Invalid",
+          "Baseline TP/FN/FP/TN",
+          "With record TP/FN/FP/TN"
+        ],
+        "rows": [
+          [
+            "Request known at commitment",
+            "8",
+            "8",
+            "0",
+            "0",
+            "0/0/0/8",
+            "0/0/0/8"
+          ],
+          [
+            "Request revealed after commitment",
+            "8",
+            "8",
+            "0",
+            "0",
+            "0/0/0/8",
+            "0/0/0/8"
+          ],
+          [
+            "Deterministic source projection",
+            "8",
+            "8",
+            "0",
+            "0",
+            "0/0/0/8",
+            "0/0/0/8"
+          ],
+          [
+            "Full original evidence",
+            "8",
+            "8",
+            "0",
+            "0",
+            "0/0/0/8",
+            "Not collected"
+          ]
+        ]
+      },
+      "interpretation": "The hidden-request condition preserved evidence for a later decision without storing a solved answer. However, both model-written inventories and the deterministic inventory were identical in every world, including array order. Their action inputs were consequently identical within each world; these comparisons provide repeated draws, not evidence of a distinct reasoning signal. The result supports evidence copying and later use on these structured tasks, not recovered private reasoning or a monitoring advantage."
     },
     {
       "id": "exp-003",
