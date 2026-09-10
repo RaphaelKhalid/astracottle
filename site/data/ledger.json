@@ -8,7 +8,7 @@
       "title": "Benign mismatch or harmful state?",
       "topic": "benign mismatch harmful state preaction forecasting integrity bit deterministic policy validator",
       "status": "stopped",
-      "statusLabel": "Stopped + dated supplement",
+      "statusLabel": "Pilot finished · final result added later",
       "decisions": 24,
       "question": "Can rich carried state distinguish harmless-to-this-query mismatches from harmful ones, beyond a one-bit check and deterministic semantic rules?",
       "findingLabel": "DELAYED SUPPLEMENT / EXPLORATORY",
@@ -598,3 +598,4 @@
     }
   ]
 }
+

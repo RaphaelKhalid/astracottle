@@ -15,18 +15,18 @@
 <div class="page">
   <header>
     <div class="masthead"><a class="wordmark" href="/">astracottle<span aria-hidden="true">_</span></a><div class="header-right"><span class="smallcaps">PUBLIC RESEARCH NOTEBOOK</span><button id="theme" type="button" aria-label="Switch color theme">Dark mode</button></div></div>
-    <nav aria-label="Main navigation"><a href="#notebook">[ experiments ]</a><a href="/demo.html">[ controller replay ↗ ]</a><a href="#method">[ method ]</a><a href="#publication">[ publication policy ]</a><a href="https://github.com/RaphaelKhalid/astracottle">[ source ↗ ]</a></nav>
+    <nav aria-label="Main navigation"><a href="#notebook">[ experiments ]</a><a href="/demo.html">[ try the sharing check ↗ ]</a><a href="#method">[ method ]</a><a href="#publication">[ publication policy ]</a><a href="https://github.com/RaphaelKhalid/astracottle">[ source ↗ ]</a></nav>
   </header>
 
-  <div class="intro"><p class="eyebrow">FIELD NOTES / ASTRA / OVERSIGHT</p><h1>Can public working state<br>make an AI easier to oversee?</h1><p>Small, inspectable experiments on the evidence an agent carries forward—and what a reviewer can learn from it.</p><p class="disclosure">Independent research. Public decision records are not private chain of thought. Early results are exploratory.</p></div>
+  <div class="intro"><p class="eyebrow">FIELD NOTES / ASTRA / OVERSIGHT</p><h1>How can we check an AI action?</h1><p>Astra prepares a report. Astracottle checks it against your sharing rules before creating the file. It saves what Astra was given, what Astra proposed, and why the file was allowed or blocked.</p><p>We cannot read Astra’s mind. We can check its work. The current tool handles one small job: deciding which case records may go into a partner report.</p><p><a href="/demo.html">Try the saved sharing example →</a></p><div class="next-steps"><strong>Next steps</strong><ol><li>Try the three saved examples; they make no model calls.</li><li>Test a couple of fresh Astra responses. So far, the new connection has only been tested with simulated responses. No live test is scheduled.</li><li>Try new cases and another small task before making bigger claims.</li></ol></div><p class="disclosure">Independent research. Public decision records are not private chain of thought.</p></div>
 
   <main id="notebook" tabindex="-1">
     <div class="section-line"><h2>Experiment ledger</h2><span id="updated">Loading ledger…</span></div>
-    <div class="statistics" aria-label="Notebook totals"><div><strong id="study-count">—</strong><span>studies logged</span></div><div><strong id="decision-count">—</strong><span>model decisions</span></div><div><strong id="complete-count">—</strong><span>studies completed</span></div><div><strong>OPEN</strong><span>protocols &amp; data</span></div></div>
+    <div class="statistics" aria-label="Notebook totals"><div><strong id="study-count">—</strong><span>studies logged</span></div><div><strong id="decision-count">—</strong><span>model decisions</span></div><div><strong id="complete-count">—</strong><span>original runs completed</span></div><div><strong>OPEN</strong><span>protocols &amp; data</span></div></div>
     <div class="workspace">
       <aside aria-label="Choose an experiment">
         <label for="search">Find an experiment <kbd>/</kbd></label><input id="search" type="search" placeholder="Title or topic…" autocomplete="off">
-        <label for="status">Status</label><select id="status"><option value="all">All experiments</option><option value="completed">Completed</option><option value="registered">Registered</option><option value="running">Running</option><option value="stopped">Stopped / incomplete</option></select>
+        <label for="status">Status</label><select id="status"><option value="all">All experiments</option><option value="completed">Completed</option><option value="registered">Registered</option><option value="running">Running</option><option value="stopped">Finished with a later result</option></select>
         <div id="experiment-list" role="list" aria-live="polite"></div>
         <p class="index-note">Results, nulls, and design failures belong in the same notebook.</p>
       </aside>
@@ -42,4 +42,6 @@
 </div>
 </body>
 </html>
+
+
 

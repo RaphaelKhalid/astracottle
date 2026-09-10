@@ -7,3 +7,4 @@
 @media print{.page{max-width:none;padding:0}body{font-size:12pt}nav,aside,.header-right,.resources,button,.trace-controls{display:none!important}.workspace{display:block}.intro h1{font-size:28pt}.statistics strong{font-size:18pt}.reference{break-inside:avoid}a{color:inherit}.finding{background:none}pre{max-height:none}footer{font-size:9pt}}
 
 .tag.stopped{color:var(--muted);border-style:dashed}
+.next-steps{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:.75rem 0;margin:1rem 0;font-size:16px}.next-steps strong{font:14px/1.5 'Courier New',monospace}.next-steps ol{margin:.35rem 0 0;padding-left:1.4rem}.next-steps li+li{margin-top:.25rem}
