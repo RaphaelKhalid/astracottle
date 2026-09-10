@@ -20,7 +20,7 @@ The question is whether an external controller can make useful evidence availabl
 
 - **006 — Forecasting future violations.** Completed 40 calls: actual-state forecasts identified four later violations under injected state faults; four intact actions succeeded. The simple mismatch heuristic also scored perfectly. This supports early input-state observability, with harmless mismatches still untested. [Report](docs/experiment-06-report.md).
 
-- **007 — Harmless discrepancies and action risk.** Stopped after 23/24 calls: five actor outcomes, one missing harmful-release outcome. Both benign mismatches stayed safe; a crude mismatch rule falsely flagged them. Actual-state forecasts helped, while query-aware code matched all observed outcomes. [Incomplete report](docs/experiment-07-report.md).
+- **007 — Harmless discrepancies and action risk.** Original collection stopped at 23/24 calls; a separately preregistered one-call extension on September 10 supplied the final outcome. Both harmful actors violated policy; both benign and both intact actors stayed safe. Actual-state forecasts caught both violations, and query-aware code matched all six outcomes. The combined analysis is exploratory. [Report and dated supplement](docs/experiment-07-report.md).
 
 Results, failed setup gates, null findings, and limitations belong in the record. These small experiments are descriptive probes; they do not establish population-level performance or private reasoning faithfulness.
 

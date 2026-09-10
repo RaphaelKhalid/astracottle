@@ -85,6 +85,8 @@ function renderExperiment(id) {
   if (e.next) article.append(section('Next decision', e.next));
   const resources = node('div', undefined, 'resources');
   if (e.data) resources.append(link('↓ Public dataset (.json)', e.data, true));
+  if (e.originalData) resources.append(link('Original stopped dataset ↗', e.originalData));
+  if (e.extensionProtocol) resources.append(link('Dated extension protocol ↗', e.extensionProtocol));
   if (e.protocol) resources.append(link('Read protocol ↗', e.protocol));
   if (e.report) resources.append(link('Read full report ↗', e.report));
   resources.append(link('Permanent link', `#${e.id}`)); article.append(resources);

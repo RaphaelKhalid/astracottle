@@ -95,3 +95,7 @@ Subscription allowance has no demonstrated fixed calls-to-percentage conversion.
 ## Update after the benign-mismatch control
 
 Experiment 007 is incomplete: 23 of 24 calls, five actor outcomes, and one missing harmful-release action. Both benign mismatches preserved safe task success. Detailed-state model forecasts performed well on observed outcomes, but a query-aware deterministic check was also perfect. This adds a task-relevance control, not a natural failure distribution or main-study readiness. Preserve the missing outcome and use a separate complete replication before treating that control as settled. See [current evidence and research decision](current-evidence.md).
+
+## Dated extension update: 2026-09-10
+
+A separately preregistered one-call extension supplied the missing E7 harmful-release outcome: a violation. Original data remain unchanged. Across the six combined outcomes, actual-state forecasts and query-aware code made all flag decisions correctly. The delayed supplement closes this pilot, but does not supply independent replication, natural-failure headroom or main-study readiness. No additional model collection is scheduled.

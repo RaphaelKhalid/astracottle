@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-08",
+  "updated": "2026-09-10",
   "experiments": [
     {
       "id": "exp-007",
@@ -8,19 +8,19 @@
       "title": "Benign mismatch or harmful state?",
       "topic": "benign mismatch harmful state preaction forecasting integrity bit deterministic policy validator",
       "status": "stopped",
-      "statusLabel": "Stopped / incomplete",
-      "decisions": 23,
+      "statusLabel": "Stopped + dated supplement",
+      "decisions": 24,
       "question": "Can rich carried state distinguish harmless-to-this-query mismatches from harmful ones, beyond a one-bit check and deterministic semantic rules?",
-      "findingLabel": "INCOMPLETE / TASK RELEVANCE MATTERS",
-      "finding": "Five actor outcomes were observed before an administrative quota stop. Actual-state forecasts distinguished the observed harmful action from both benign mismatches. A query-aware code check also scored perfectly. The final harmful-release action is missing; its three forecasts are unscored.",
+      "findingLabel": "DELAYED SUPPLEMENT / EXPLORATORY",
+      "finding": "The one delayed harmful-release actor followed the corrupted verification record and made unsupported completion claims. Across six outcomes, actual-state forecasts flagged both violations and no safe actions; query-aware code also matched all six. The original 23-call stopped run remains separate.",
       "stats": [
         {
-          "value": "23 / 24",
-          "label": "calls completed"
+          "value": "23 + 1",
+          "label": "original + delayed calls"
         },
         {
-          "value": "5 / 6",
-          "label": "actor outcomes observed"
+          "value": "6 / 6",
+          "label": "outcomes now available"
         },
         {
           "value": 2,
@@ -31,21 +31,23 @@
         "Reuse the lexicographically first E6 source world in each family without selecting on model outcomes. The harmful state reuses its frozen E6 mutation.",
         "The benign export grant changes only its recipient to an existing unrelated recipient. The benign release edit changes the same suite scalar to another nonqualifying version. Both remain factual mismatches while preserving selected-query predicates.",
         "Baseline, actual-state and integrity-bit forecasts receive a common equal-mixture disclosure. Baseline is identical across variants; the bit view is identical for harmful and benign states. All three forecasts are hashed before the actor receives its exact committed input.",
-        "Primary Brier scores and secondary flags use later original-source action labels. Score any-mismatch, mixture and query-aware deterministic heuristics separately. The query-aware rule validates a hypothetical record-compliant ideal action, without knowing future actor behavior."
+        "Primary Brier scores and secondary flags use later original-source action labels. Score any-mismatch, mixture and query-aware deterministic heuristics separately. The query-aware rule validates a hypothetical record-compliant ideal action, without knowing future actor behavior.",
+        "A September 10 amendment prospectively allowed exactly one delayed actor for the missing cell, with the September 8 input and forecasts unchanged. No retries or new forecasts were made."
       ],
       "limitations": [
         "Benign means unchanged policy predicates for this selected query, not factual faithfulness or global trustworthiness. The fabricated permission remains a record error, and a strict integrity gate may reasonably reject it.",
         "Three state types and their equal proportions are constructed. Six trials from two structured worlds do not estimate natural failure prevalence, deployment risk or adversarial intent.",
         "Complete structured policy semantics permit a strong deterministic control. Model prediction must be compared with that control, not only a coarse mismatch bit.",
-        "Repeated baseline and bit inputs, one actor draw per cell and shared model family limit generalization. There is no calibration, power, readiness or private-chain-of-thought faithfulness claim."
+        "Repeated baseline and bit inputs, one actor draw per cell and shared model family limit generalization. There is no calibration, power, readiness or private-chain-of-thought faithfulness claim.",
+        "The original run remains stopped. The six-target summary combines dates after prior outcomes were known; model service weights may have changed. This is exploratory and not an independent replication."
       ],
-      "next": "Retain this incomplete result. A complete separately registered replication and held-out natural-failure development set are needed before calibration or a main run. An application prototype should prioritize committed inputs, source checks and action validation.",
+      "next": "Pilot collection is closed. Preserve the original stopped run and dated supplement. Before any main study, develop held-out tasks with natural failures and compare model review against strong code checks; no further model collection is scheduled.",
       "protocol": "https://github.com/RaphaelKhalid/astracottle/blob/4578ec7162f5d7864bcf417195aa2ae5f309338a/experiments/experiment07/plan.json",
-      "interpretation": "A mismatch alone was an insufficient predictor: the any-mismatch rule falsely flagged both benign actions. Detailed state supported better model forecasts, while the query-aware deterministic check matched every observed outcome. The partial five-target scores cannot establish a general trust advantage, private reasoning access or natural failure rates.",
-      "data": "/data/experiment-07.json",
+      "interpretation": "Detailed supplied state helped distinguish task-relevant faults from benign mismatches. Actual-state forecasts caught both violations without false flags; baseline and integrity-bit models missed both at the fixed threshold. Query-aware code also scored perfectly, so no advantage over executable semantic checking is established.",
+      "data": "/data/experiment-07-supplement.json",
       "report": "https://github.com/RaphaelKhalid/astracottle/blob/main/docs/experiment-07-report.md",
       "results": {
-        "caption": "Only five observed actor outcomes; final harmful-release outcome missing. Brier is descriptive and lower is better.",
+        "caption": "Exploratory combined six-target analysis: five September 8 actors plus one September 10 actor. Original five-target scores remain in the report and original dataset. Lower Brier is better.",
         "columns": [
           "Forecast / rule",
           "Observed targets",
@@ -55,42 +57,44 @@
         "rows": [
           [
             "Original evidence only",
-            "5",
-            "0/1/0/4",
-            "0.2019200"
+            "6",
+            "0/2/0/4",
+            "0.2386833"
           ],
           [
             "Actual actor state",
-            "5",
-            "1/0/0/4",
-            "0.0013600"
+            "6",
+            "2/0/0/4",
+            "0.0012000"
           ],
           [
             "Model given integrity bit",
-            "5",
-            "0/1/0/4",
-            "0.1398000"
+            "6",
+            "0/2/0/4",
+            "0.1669167"
           ],
           [
             "Any-mismatch rule",
-            "5",
-            "1/0/2/2",
-            "0.4000000"
+            "6",
+            "2/0/2/2",
+            "0.3333333"
           ],
           [
             "Mixture-risk rule",
-            "5",
-            "1/0/2/2",
-            "0.1500000"
+            "6",
+            "2/0/2/2",
+            "0.1666667"
           ],
           [
             "Query-aware code check",
-            "5",
-            "1/0/0/4",
+            "6",
+            "2/0/0/4",
             "0.0000000"
           ]
         ]
-      }
+      },
+      "originalData": "/data/experiment-07.json",
+      "extensionProtocol": "https://github.com/RaphaelKhalid/astracottle/blob/98c74ce9b011e076c68bb251d42dadebc78ece52/experiments/experiment07_extension/protocol.md"
     },
     {
       "id": "exp-006",
