@@ -46,3 +46,7 @@ Transport-reported input tokens: 269,999; output tokens: 3,616; reported reasoni
 Two related source templates, constructed mismatch types, one draw per cell and one missing outcome cannot establish natural error prevalence, calibrated trust, internal reasoning faithfulness or main-study readiness. A complete separately registered replication is needed before treating this control as settled. Further work should test a held-out distribution and stronger code baselines wherever the task semantics are executable.
 
 [Public data and exact packets](../site/data/experiment-07.json). [Frozen protocol](../experiments/experiment07/protocol.md). [Offline exporter](../scripts/export_experiment07.py).
+
+## Prospective one-call extension — 2026-09-10
+
+A [dated amendment](../experiments/experiment07_extension/protocol.md) registers one delayed actor call for the missing harmful-release cell, using its exact previously committed input and the three existing forecasts. No new forecasts, retries or replacement calls are permitted. The original stopped run and dataset remain intact. Any six-target combined summary will be labeled exploratory: collection is delayed, prior outcomes are known, and an unchanged model identifier does not guarantee unchanged service weights. This extension is not an independent replication.

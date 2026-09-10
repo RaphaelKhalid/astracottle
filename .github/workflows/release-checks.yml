@@ -43,3 +43,5 @@ jobs:
         run: python -B experiments/experiment07/selftest.py
       - name: Verify benign-mismatch preregistration
         run: python -B scripts/check_e7.py
+      - name: Verify one-call extension bindings
+        run: python -B experiments/experiment07_extension/extension.py --check
