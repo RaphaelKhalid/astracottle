@@ -11,6 +11,8 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
       - name: Validate static publication
         run: node scripts/check.mjs
+      - name: Check offline controller
+        run: python -B -m unittest discover -s tests -p 'test_*.py' -v
       - name: Scan staged source and served data
         run: python -B scripts/public_safety_check.py --git-index . site
       - name: Check deterministic fixtures

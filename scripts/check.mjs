@@ -14,8 +14,35 @@ const ledger=JSON.parse(await readFile(path.join(site,'data/ledger.json'),'utf8'
 assert(ledger.experiments.length>0);
 const ids=new Set();
 for(const e of ledger.experiments){assert(!ids.has(e.id));ids.add(e.id);assert(/^exp-\d{3}$/.test(e.id));assert(['completed','registered','running','stopped'].includes(e.status));assert(Number.isInteger(e.decisions)&&e.decisions>=0);assert(e.title&&e.question&&e.finding&&e.setup&&e.limitations);for(const key of ['data','protocol','report'])if(e[key]?.startsWith('/')){const f=path.resolve(site,'.'+e[key]);assert(f.startsWith(site+path.sep));await readFile(f);}if(e.results){assert(e.results.columns.length>0);for(const row of e.results.rows)assert.equal(row.length,e.results.columns.length);}}
-const html=await readFile(path.join(site,'index.html'),'utf8');
-for(const id of ['theme','search','status','experiment-list','experiment','error','updated','study-count','decision-count','complete-count'])assert(html.includes(`id="${id}"`),`Missing UI target ${id}`);
-for(const match of html.matchAll(/(?:href|src)="(\/[^"#]*)"/g)){const url=match[1];await readFile(path.join(site,url==='/'?'index.html':url.slice(1)));}
-const syntax=spawnSync(process.execPath,['--check','site/app.js'],{stdio:'inherit'});assert.equal(syntax.status,0);
+const htmlFiles=files.filter(file=>path.extname(file)==='.html');
+const indexHtml=await readFile(path.join(site,'index.html'),'utf8');
+for(const id of ['theme','search','status','experiment-list','experiment','error','updated','study-count','decision-count','complete-count'])assert(indexHtml.includes(`id="${id}"`),`Missing UI target ${id}`);
+function resolveLocalLink(file,url){
+  const clean=url.split('#')[0].split('?')[0];
+  if(!clean || clean.startsWith('http:') || clean.startsWith('https:') || clean.startsWith('mailto:') || clean.startsWith('tel:') || clean.startsWith('data:') || clean.startsWith('javascript:'))return null;
+  const target=clean.startsWith('/') ? path.join(site,clean==='/'?'index.html':clean.slice(1)) : path.resolve(path.dirname(file),clean);
+  const resolved=path.resolve(target);
+  assert(resolved===site || resolved.startsWith(site+path.sep),`Local link escapes site: ${url}`);
+  return resolved;
+}
+for(const file of htmlFiles){
+  const text=await readFile(file,'utf8');
+  for(const match of text.matchAll(/(?:href|src)="([^"]+)"/g)){
+    const target=resolveLocalLink(file,match[1]);
+    if(target)await readFile(target);
+  }
+}
+for(const key of ['data','protocol','report','originalData','extensionProtocol']){
+  for(const e of ledger.experiments){
+    if(e[key] && typeof e[key]==='string' && e[key].startsWith('/')){
+      const f=path.resolve(site,'.'+e[key]);
+      assert(f===site || f.startsWith(site+path.sep),`Ledger ${key} escapes site`);
+      await readFile(f);
+    }
+  }
+}
+for(const file of files.filter(file=>path.extname(file)==='.js')){
+  const syntax=spawnSync(process.execPath,['--check',file],{stdio:'inherit'});
+  assert.equal(syntax.status,0,`JavaScript syntax check failed: ${path.relative(site,file)}`);
+}
 console.log(`Release checks passed: ${files.length} static files; ${ledger.experiments.length} experiments; local links, JSON fields, credential patterns, and script syntax checked.`);

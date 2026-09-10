@@ -48,6 +48,35 @@ The local server prints its address. Vercel serves `site/` from the connected pu
 
 The Python fixtures and evaluators use the standard library. Model execution uses the supported Codex app-server, requires an existing ChatGPT sign-in, and consumes the operator's subscription allowance. No API key is embedded or required. The transport is currently Windows-specific and was calibrated with Codex 0.153.0 and Python 3.12.
 
+The local controller replay is standard-library Python and runs offline. Run its
+focused contract checks with:
+
+```sh
+python -m unittest discover -s tests -p 'test_controller.py' -v
+```
+
+To replay the saved Astra proposal demo with a deterministic intervention, create the output root once:
+
+```sh
+mkdir -p ../work/controller-demo
+python -m controller replay --case examples/<case>.json --out ../work/controller-demo --run-id <id>
+```
+
+The replay validates an operator-provided policy and writes local receipts. It
+is integration evidence for the export boundary, not a fresh efficacy trial;
+the E7 task-aware deterministic checker also matched all six outcomes. Passing
+checks does not prove source truth, authorization, authenticity, or private
+reasoning. Offline output stays local; an explicitly selected live adapter
+would send selected evidence to its model service.
+
+To make one explicit bounded live proposal through the reviewed transport:
+
+```sh
+python -m controller propose --case examples/<case>.json --out ../work/controller-live --run-id <id> --weekly-stop 50
+```
+
+The command makes one tools-disabled Astra low-reasoning call, then sends its schema-checked proposal through the same local export boundary. It sends the selected actor input to the reviewed model service and records that disclosure locally. Use `replay` for offline-only operation.
+
 Run offline self-tests first. The experiment runner requires an explicit `--run` and a frozen plan. Configure `ASTRACOTTLE_WEEKLY_STOP_PERCENT` locally to an absolute weekly-used ceiling appropriate for your account. An absent ceiling fails closed. This guard is conservative; it is not a guaranteed per-call spend cap. Never commit local run directories or account metadata.
 
 The published experiment-02 through experiment-07 plans freeze exact source hashes. If you change source or use another transport, register a new protocol before collecting results rather than silently replacing the original.
@@ -63,3 +92,4 @@ Only the reviewed `site/` directory is web-served. The local execution code cann
 Open an issue for a methodological concern or a proposed replication. Separate observed results from hypotheses. Include fixture definitions, exact intervention semantics, a deterministic evaluator where possible, and a public-data review. Do not submit credentials or unreviewed private traces.
 
 MIT licensed. Independent work; no affiliation with or endorsement by OpenAI is implied.
+
